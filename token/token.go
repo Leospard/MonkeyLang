@@ -29,3 +29,16 @@ const (
 	FUNCTION = "FUNCTION"
 	LET = "LET"
 )
+
+var keywords = map[string]TokenType {
+	"fn": FUNCTION,
+	"let": LET,
+}
+
+// check whether the ident is keyword
+func LoopUpIdent(ident string) TokenType{
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
+}
