@@ -13,5 +13,5 @@ MoneyLang will support:
 - closure
 
 ### Schedule
-[] Lexical Analysis
-[] Gammatical Analysis  
+- [x] Lexical Analysis
+- [ ] Gammatical Analysis  
